@@ -38,3 +38,20 @@ public:
     }
 };
 
+int main() {
+    cout << "--- Daftar Inventaris Toko ---" << endl;
+
+    // Membuat objek dengan 4 metode inisialisasi berbeda
+    Produk p1;                    // Default
+    Produk p2(101);               // Hanya ID
+    Produk p3("Kopi Luwak");      // Hanya Nama
+    Produk p4(102, "Teh Manis");  // Lengkap
+
+    // Menampilkan informasi produk
+    p1.tampilkan();
+    p2.tampilkan();
+    p3.tampilkan();
+    p4.tampilkan();
+
+    return 0;
+}
