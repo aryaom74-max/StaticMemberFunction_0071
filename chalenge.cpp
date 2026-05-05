@@ -27,4 +27,14 @@ public:
         nama = pNama;
     }
 
-   
+    // 4. Constructor lengkap (id dan nama)
+    Produk(int pId, string pNama) {
+        id = pId;
+        nama = pNama;
+    }
+
+    void tampilkan() {
+        cout << "ID Produk: " << id << " | Nama Produk: " << nama << endl;
+    }
+};
+
